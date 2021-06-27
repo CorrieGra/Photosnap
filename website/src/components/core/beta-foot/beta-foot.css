@@ -1,0 +1,33 @@
+.beta {
+    padding: 6.5rem 0;
+    background: url('../../../assets/shared/desktop/bg-beta.jpg') no-repeat center center / cover;
+}
+
+.beta > .container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+}
+
+.beta > .container > .beta__description { width: 70%; }
+
+.beta > .container > .beta__description > h1 { color: var(--col-pw); }
+
+.beta > .container > .beta__action { justify-self: flex-end; }
+
+@media only screen and (min-width: 300px) and (max-width: 749px) { 
+    .beta > .container { 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    .beta > .container > .beta__description { width: 100%; }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1160px) {
+    .beta > .container { grid-template-columns: 60% 40%; }
+
+    .beta > .container > .beta__description { width: 90%; }
+}

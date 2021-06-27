@@ -1,0 +1,16 @@
+@media only screen and (min-width: 300px) and (max-width: 749px) { 
+    .features {
+        grid-template-columns: 1fr !important;
+        padding: 12.5rem 12.5rem !important;
+        padding: 12.5rem 5.75rem !important;
+    }
+
+    .story__card--list  { grid-template-columns: 1fr !important; }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1160px) {
+    .features {
+        grid-template-columns: 1fr !important;
+        padding: 12.5rem 12.5rem !important;
+    }
+} 

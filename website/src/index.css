@@ -1,13 +1,100 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+    /* colors */
+    --col-accent: #5A77FF, #BC7198, #FFC593;
+    --col-pb: rgb(0, 0, 0);
+    --col-pw: rgb(255, 255, 255);
+    --col-lg: rgb(233, 233, 233);
+    /* font-sizes */
+    --font-h1: 4rem;
+    --font-h2: 2.4rem;
+    --font-h3: 1.8rem;
+    --font-h4: 1.6rem;
+    --font-b: 1.5rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+    font-family: 'DMSans-Regular';
+    src: url('./assets/fonts/DMSans-Regular.ttf');
 }
+
+@font-face {
+    font-family: 'DMSans-Bold';
+    src: url('./assets/fonts/DMSans-Bold.ttf');
+}
+
+*,
+*::before,
+*::after,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html { 
+    font-size: 62.5%; 
+    width: 100vw; 
+}
+
+body {
+    font-family: 'DMSans-Regular', sans-serif;
+    font-size: var(--font-b);
+    line-height: 2.5rem;
+    color: var(--col-pb);
+}
+
+h1,
+h2,
+h3,
+h4 { font-family: 'DMSans-Bold'; }
+
+h1 {
+    font-size: var(--font-h1);
+    line-height: 4.8rem;
+    letter-spacing: .417rem;
+}
+
+h2 {
+    font-size: var(--font-h2);
+    line-height: 2.5rem;
+}
+
+h3 {
+    font-size: var(--font-h3);
+    line-height: 2.5rem;
+}
+
+h4 {
+    font-size: var(--font-h4);
+    line-height: 1.6rem;
+    letter-spacing: .2rem;
+}
+
+/* utils */
+.hidden { visibility: hidden; }
+
+/* layout */
+.container {
+    padding: 0 10%;
+}
+
+/* typography */
+.t-upper { text-transform: uppercase; }
+
+.t-cap { text-transform: capitalize; }
+
+.special--char { 
+    cursor: pointer;
+    padding-left: 1rem;
+    font-size: 2rem; 
+}
+
+@media only screen and (min-width: 300px) and (max-width: 749px) { 
+
+ }
+
+@media only screen and (min-width: 750px) and (max-width: 1160px) {
+   
+ }

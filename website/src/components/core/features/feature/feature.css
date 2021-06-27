@@ -1,0 +1,16 @@
+.feature {
+    display: grid;
+    grid-template-rows: 45% 10% 45%;
+    align-items: center;
+    justify-items: center;
+    padding: 6.8rem 0;
+}
+
+.feature > .feature__logo { height: 10rem; }
+
+.feature > .feature__title { padding: 1rem 0; }
+
+.feature > .feature__description {
+    padding-top: 1rem;
+    align-self: flex-start;
+}

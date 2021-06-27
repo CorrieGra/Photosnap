@@ -1,0 +1,99 @@
+.card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 42% 58%;
+    grid-template-areas: "introduction showcase";
+}
+
+.card:nth-child(1)::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 50%;
+    width: .6rem;
+    background: linear-gradient(var(--col-accent));
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+}
+
+.card:nth-child(even) {
+    grid-template-columns: 58% 42%;
+    grid-template-areas: "showcase introduction";
+}
+
+.card > .card__introduction {
+    grid-area: introduction;
+    padding: 17.5rem 25%;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:first-child > .card__introduction {
+    background-color: var(--col-pb);
+    color: var(--col-pw);
+}
+
+.card > .card__introduction > .card__introduction--sub-header {
+    padding: 1.6rem 0 5.3rem 0;
+}
+
+.card > .card__showcase {
+    grid-area: showcase;
+}
+
+.card > .card__showcase--1 { background: url('../../../assets/home/desktop/create-and-share.jpg') no-repeat center center / cover; }
+
+.card > .card__showcase--2 { background: url('../../../assets/home/desktop/beautiful-stories.jpg') no-repeat center center / cover; }
+
+.card > .card__showcase--3 { background: url('../../../assets/home/desktop/designed-for-everyone.jpg') no-repeat center center / cover; }
+
+.card > .card__showcase--4 { background: url('../../../assets/features/desktop/hero.jpg') no-repeat center center / cover; }
+
+.card > .card__showcase--5 { background: url('../../../assets/pricing/desktop/hero.jpg') no-repeat center center / cover; }
+
+@media only screen and (min-width: 300px) and (max-width: 749px) {
+    .card,
+    .card:nth-child(even) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "showcase"
+                             "introduction";
+    }
+
+    .card:nth-child(1)::before {
+        top: calc(50% + .2rem);
+        left: 10%;
+        height: .5rem;
+        width: 40%;
+        background: linear-gradient(45deg, var(--col-accent));
+        transform: translate(0, -50%);
+        -webkit-transform: translate(0, -50%);
+        -moz-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        -o-transform: translate(0, -50%);
+    }
+
+    .card > .card__introduction {
+        grid-area: introduction;
+        padding: 8.5rem 4rem;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1160px) {
+    .card {
+        grid-template-columns: 58% 42%;
+        grid-template-areas: "introduction showcase";
+    }
+
+    .card:nth-child(even) {
+        grid-template-columns: 42% 58%;
+        grid-template-areas: "showcase introduction";
+    }
+}
+

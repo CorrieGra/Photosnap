@@ -1,0 +1,37 @@
+.hero {
+    padding: 12.2rem 0;
+    background: url('../../assets/stories/desktop/moon-of-appalacia.jpg') no-repeat center center / cover;
+}
+
+.hero > .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.hero > .container .hero__introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    color: var(--col-pw);
+}
+
+.hero > .container .hero__introduction > .hero__introduction--headline { margin-bottom: 1.2rem; }
+
+.hero > .container .hero__introduction > .hero__introduction--title { margin: 1.2rem 0 1.1rem 0; }
+
+.hero > .container .hero__introduction > .hero__introduction--details { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 1.2rem; 
+}
+
+.hero > .container .hero__introduction > .hero__introduction--details > .details--date::first-letter { text-transform: uppercase; }
+.hero > .container .hero__introduction > .hero__introduction--details > .details--author span { text-transform: capitalize; }
+
+.hero > .container .hero__introduction > .hero__introduction--description { margin: 1.2rem 0 2.9rem 0; }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 1160px) {
+    .hero > .container .hero__introduction { width: 100%; }
+}

@@ -1,0 +1,12 @@
+.story__card--list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 1160px) {
+    .story__card--list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
