@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://photosnap-beryl.vercel.app/)
+- Live Site URL: [Photosnap](https://photosnap-beryl.vercel.app/)
 
 ## My process
   I was a little ill prepared for this project.
